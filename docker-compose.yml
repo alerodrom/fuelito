@@ -1,0 +1,13 @@
+
+ 
+version: '3'
+
+services:
+
+  web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: bash -c "python bot.py"
+    volumes:
+      - .:/code
